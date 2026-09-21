@@ -12,6 +12,13 @@
         rel="stylesheet">
 
     <style>
+        .full-body-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
         .first-flex {
             display: flex;
             justify-content: center;
@@ -117,6 +124,7 @@
         .email-label {
             margin-top: 0px !important;
         }
+
         .label-div {
             color: #2e2e2e;
             font-size: 14px;
@@ -155,86 +163,94 @@
             color: #2e2e2e;
             font-size: 14px;
         }
+
         footer {
             display: flex;
             justify-content: center;
             font-size: 14px;
-            color: #00000087 ;
+            color: #00000087;
             background-color: #00000005;
         }
-        footer a {        
+
+        footer a {
             color: #00000087;
         }
     </style>
 </head>
 
 <body>
-    <div class="first-flex">
-        <div class="main-div">
-            <div>
-                <svg class="elevenlab-svg" xmlns="http://www.w3.org/2000/svg" width="173" height="48" viewBox="0 0 173 48">
-                    <rect width="100%" height="100%" fill="white" />
-                    <text x="20" y="34" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700"
-                        fill="#000000" letter-spacing="-0.5">IIElevenLabs</text>
-                </svg>
+    <div class="full-body-div">
+        <div >
+            <div class="first-flex">
+                <div class="main-div">
+                    <div>
+                        <svg class="elevenlab-svg" xmlns="http://www.w3.org/2000/svg" width="173" height="48"
+                            viewBox="0 0 173 48">
+                            <rect width="100%" height="100%" fill="white" />
+                            <text x="20" y="34" font-family="Arial, Helvetica, sans-serif" font-size="21"
+                                font-weight="700" fill="#000000" letter-spacing="-0.5">IIElevenLabs</text>
+                        </svg>
+                    </div>
+                    <div class="flex-div">
+                        <div class="heading">
+                            <p>Create an account</p>
+                        </div>
+
+                        <div>
+                            <button class="google-button">
+                                <div class="google-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"
+                                        width="25" height="25">
+                                        <!-- Google-style multicolor G icon recreated from the provided reference -->
+                                        <path fill="#EA4335"
+                                            d="M62.7 138.2C88.4 88.2 139.8 54 200 54c40.6 0 77.6 14.8 106.1 40.4l-44.5 43.1C245.6 121.1 224.5 114 200 114c-39.5 0-73.1 25.9-85.1 61.7z" />
+                                        <path fill="#FBBC05"
+                                            d="M62.7 138.2L114.9 175.7C110.5 186.1 108 197.5 108 210c0 11.3 2.1 21.8 6.1 31.6l-51.5 38.7C50.2 257.5 45 234.3 45 210c0-25.7 6.4-50.1 17.7-71.8z" />
+                                        <path fill="#34A853"
+                                            d="M62.6 280.3l51.5-38.7c12.2 37.1 46.2 64.4 85.9 64.4 24.2 0 44.8-7.6 59.7-20.6l47.3 36.8C278.2 346.8 241.8 366 200 366c-60.4 0-111.9-34.4-137.4-85.7z" />
+                                        <path fill="#4285F4"
+                                            d="M307 322.2l-47.3-36.8c10.7-9.4 18.8-22.7 23-39.4H201v-59.3h147.1c2.3 10.5 3.5 21.4 3.5 32.8 0 43.5-15.7 80-44.6 102.7z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p>Sign up with Google</p>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="bottom-border">
+                        </div>
+
+                        <!-- form -->
+                        <form action="/sign-up">
+                            <div>
+                                <div class="email-label label-div"><label for="email">Email</label></div>
+
+                                <div>
+                                    <input class="input-box" id="email" type="email">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="label-div"><label for="password">Password</label></div>
+                                <div>
+                                    <input class="input-box" id="password" type="password">
+                                </div>
+                            </div>
+                            <div>
+                                <button class="sign-up-btn">Sign up</button>
+                            </div>
+                            <!-- form-end -->
+                        </form>
+                        <div class="sign-in">
+                            <p>Already registered? <span><a href="#">Sign in</a></span></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="flex-div">
-                <div class="heading">
-                    <p>Create an account</p>
-                </div>
-
-                <div>
-                    <button class="google-button">
-                        <div class="google-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"
-                                width="25" height="25">
-                                <!-- Google-style multicolor G icon recreated from the provided reference -->
-                                <path fill="#EA4335"
-                                    d="M62.7 138.2C88.4 88.2 139.8 54 200 54c40.6 0 77.6 14.8 106.1 40.4l-44.5 43.1C245.6 121.1 224.5 114 200 114c-39.5 0-73.1 25.9-85.1 61.7z" />
-                                <path fill="#FBBC05"
-                                    d="M62.7 138.2L114.9 175.7C110.5 186.1 108 197.5 108 210c0 11.3 2.1 21.8 6.1 31.6l-51.5 38.7C50.2 257.5 45 234.3 45 210c0-25.7 6.4-50.1 17.7-71.8z" />
-                                <path fill="#34A853"
-                                    d="M62.6 280.3l51.5-38.7c12.2 37.1 46.2 64.4 85.9 64.4 24.2 0 44.8-7.6 59.7-20.6l47.3 36.8C278.2 346.8 241.8 366 200 366c-60.4 0-111.9-34.4-137.4-85.7z" />
-                                <path fill="#4285F4"
-                                    d="M307 322.2l-47.3-36.8c10.7-9.4 18.8-22.7 23-39.4H201v-59.3h147.1c2.3 10.5 3.5 21.4 3.5 32.8 0 43.5-15.7 80-44.6 102.7z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <p>Sign up with Google</p>
-                        </div>
-                    </button>
-                </div>
-                <div class="bottom-border">
-                </div>
-
-                <!-- form -->
-                <form action="/sign-up">
-                    <div>
-                        <div class="email-label label-div"><label for="email">Email</label></div>
-
-                        <div>
-                            <input class="input-box" id="email" type="email">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="label-div"><label for="password">Password</label></div>
-                        <div>
-                            <input class="input-box" id="password" type="password">
-                        </div>
-                    </div>
-                    <div>
-                        <button class="sign-up-btn">Sign up</button>
-                    </div>
-                    <!-- form-end -->
-                </form>
-                <div class="sign-in">
-                    <p>Already registered? <span><a href="#">Sign in</a></span></p>
-                </div>
-            </div>
+            <footer>
+                <p>By continuing, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                </p>
+            </footer>
         </div>
     </div>
-    <footer>
-        <p>By continuing, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
-    </footer>
 </body>
 
 </html>
